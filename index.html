@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festa</title>
+    <link rel="shortcut icon" href="./meu_app_front/img/emoji-png.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="background">
+    <header style="height: 50px !important">
+      <h3>
+        Meu Aniversário!
+        <p style="font-size: 36px">&#127881;&#127873;&#127874;</p>
+      </h3>
+    </header>
+    <div>
+      <div id="overlay">
+        <div id="form-container">
+          <div>
+            <p><strong>Dia: 14-01-24</strong></p>
+            <p><strong>Hora: às 19:30</strong></p>
+            <p><strong>Local: Casa da vovó Marli</strong></p>
+          </div>
+
+          <section class="convidado">
+            <form id="convidadoForm">
+              <div class="row">
+                <div class="col-12">
+                  <input
+                    type="number"
+                    id="convidado"
+                    value="1"
+                    placeholder="Convidado(s)"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="nome"
+                    placeholder="Nome Completo"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="telefone"
+                    placeholder="(00) 0000-00000"
+                    required
+                  />
+                  <button type="submit">Salvar</button>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="convidadoTable">
+            <hr />
+            <table id="myTable">
+              <thead>
+                <tr>
+                  <th>Número</th>
+                  <th>Nome</th>
+                  <th>Telefone</th>
+                  <th>
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/126/126468.png"
+                      width="15px"
+                      height="15px"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="convidadoTableBody">
+                <!-- Dados dos usuários serão inseridos aqui -->
+              </tbody>
+            </table>
+          </section>
+
+          <!-- <button onclick="deletarConvidado()">Deletar</button> -->
+        </div>
+      </div>
+    </div>
+    <!-- <script src="scripts.js"></script> -->
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
